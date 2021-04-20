@@ -93,10 +93,10 @@
 
     .header-nav nav ul {
         height: 430px;
-        width: 360px;
+        width: 280px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding-top: 0;
     }
 
@@ -187,18 +187,31 @@
     }
 }
 
-@media (min-width: 376.98px) and (max-width:425.98px) {
+@media (min-width: 375.98px) and (max-width:499.98px) {
     .video h2 {
         padding-top: 0;
-        font-size: 29px;
+        font-size: 25px;
+    }
+
+    .video p {
+        padding-top: 10px;
     }
 
     .subscribe-wrap {
         padding-top: 40px;
     }
 
+    .subscribe-wrap form input {
+        max-width: 195px;
+    }
+
     .subscribe-wrap form button {
         font-size: 12px;
+        padding: 10px;
+    }
+
+    .ourwork-header h2 {
+        font-size: 31px;
     }
 }
 
