@@ -20,7 +20,7 @@ const cbpAnimatedHeader = (function () {
 
     let docElem = document.documentElement,
         header = document.querySelector('.header-nav'),
-        headerColor = document.querySelector('.header-nav nav ul li a'),
+        headerColor = document.querySelectorAll('.header-nav nav ul li a'),
         didScroll = false,
         changeHeaderOn = 900;
 
@@ -37,10 +37,15 @@ const cbpAnimatedHeader = (function () {
         const sy = scrollY();
         if (sy >= changeHeaderOn) {
             classie.add(header, 'header-fixed');
-            classie.add(headerColor, 'a-color');
+            headerColor.forEach(el => {
+                classie.add(el, 'a-color');
+            });
+
         } else {
             classie.remove(header, 'header-fixed');
-            classie.remove(headerColor, 'a-color');
+            headerColor.forEach(el => {
+                classie.remove(el, 'a-color');
+            });
         }
         didScroll = false;
     }

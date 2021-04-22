@@ -208,6 +208,10 @@
   color: #000;
 }
 
+.header-nav nav ul li .a-color:hover {
+  border-bottom: 2px solid #000;
+}
+
 .header-nav nav ul li:hover {
   border-bottom: 2px solid #FFFFFF;
 }
