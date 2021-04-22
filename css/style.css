@@ -1031,6 +1031,9 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .header-nav nav ul li .a-color {
+    color: #fff;
+  }
 }
 
 @media (max-width: 775.98px) {
