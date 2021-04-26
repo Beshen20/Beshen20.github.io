@@ -1031,14 +1031,11 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .header-nav nav ul li {
+  .header-nav nav ul li a {
     color: #fff;
   }
-  .header-fixed nav ul li a {
-    color: #fff;
-  }
-  .header-fixed nav ul li a:active {
-    color: #fff;
+  .header-fixed nav ul li:hover {
+    border-bottom: 2px solid #fff;
   }
 }
 

@@ -106,19 +106,15 @@
         display: flex;
     }
 
-    .header-nav nav ul li {
+    .header-nav nav ul li a {
         color: #fff;
+
     }
 
-    .header-fixed nav ul li a {
-        color: #fff;
+    .header-fixed nav ul li:hover {
+        border-bottom: 2px solid #fff;
     }
 
-    .header-fixed nav ul li a {
-        &:active {
-            color: #fff;
-        }
-    }
 }
 
 @media (max-width: 775.98px) {
